@@ -7,39 +7,130 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461D85881D278BB700F9E5D9 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D85871D278BB700F9E5D9 /* DetailTableViewController.swift */; };
+		461D858A1D27937700F9E5D9 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D85891D27937700F9E5D9 /* DetailTableViewCell.swift */; };
+		4651D0141D43590F0076472E /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4651D0131D43590F0076472E /* DiscoverTableViewController.swift */; };
+		4651D01C1D45E1FF0076472E /* FoodTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4651D01B1D45E1FF0076472E /* FoodTalkTests.swift */; };
 		466890D31D1E84B50056EA8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466890D21D1E84B50056EA8E /* AppDelegate.swift */; };
-		466890D51D1E84B50056EA8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466890D41D1E84B50056EA8E /* ViewController.swift */; };
 		466890D81D1E84B50056EA8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466890D61D1E84B50056EA8E /* Main.storyboard */; };
 		466890DA1D1E84B50056EA8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466890D91D1E84B50056EA8E /* Assets.xcassets */; };
 		466890DD1D1E84B50056EA8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466890DB1D1E84B50056EA8E /* LaunchScreen.storyboard */; };
+		466890E71D1E87060056EA8E /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466890E61D1E87060056EA8E /* RestaurantTableViewController.swift */; };
+		466890E91D1F9F070056EA8E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466890E81D1F9F070056EA8E /* CustomTableViewCell.swift */; };
+		466890EB1D2628E80056EA8E /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466890EA1D2628E80056EA8E /* RestaurantDetailViewController.swift */; };
+		466890EE1D2777C80056EA8E /* Restaurant1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466890ED1D2777C80056EA8E /* Restaurant1.swift */; };
+		467AD5BD1D3DFA310095CF11 /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AD5BB1D3DFA310095CF11 /* Restaurant+CoreDataProperties.swift */; };
+		467AD5BE1D3DFA310095CF11 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AD5BC1D3DFA310095CF11 /* Restaurant.swift */; };
+		467AD5C01D409BC70095CF11 /* GuiderContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AD5BF1D409BC70095CF11 /* GuiderContentViewController.swift */; };
+		467AD5C21D409E2E0095CF11 /* GuiderPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AD5C11D409E2E0095CF11 /* GuiderPageViewController.swift */; };
+		467AD5C51D41F5C70095CF11 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467AD5C31D41F5C70095CF11 /* Discover.storyboard */; };
+		467AD5C71D41F5EA0095CF11 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467AD5C61D41F5EA0095CF11 /* About.storyboard */; };
+		467AD5C91D421AF50095CF11 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AD5C81D421AF50095CF11 /* AboutTableViewController.swift */; };
+		467E56701D42B0B300E10594 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467E566F1D42B0B300E10594 /* WebViewController.swift */; };
+		46820CF41D42E2B1004F9639 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 46820CF31D42E2B1004F9639 /* Podfile */; };
+		46FC8F801D321CF6005569E1 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC8F7F1D321CF6005569E1 /* ReviewViewController.swift */; };
+		46FC8F821D38BBF3005569E1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FC8F811D38BBF3005569E1 /* MapKit.framework */; };
+		46FC8F841D39AC64005569E1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC8F831D39AC64005569E1 /* MapViewController.swift */; };
+		46FC8F861D3A3908005569E1 /* AddRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC8F851D3A3908005569E1 /* AddRestaurantController.swift */; };
+		46FC8FAA1D3DF716005569E1 /* FoodTalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46FC8FA81D3DF716005569E1 /* FoodTalk.xcdatamodeld */; };
+		B929382AB289D80DD74BA987 /* libPods-FoodTalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC24F589DFA83727454E910 /* libPods-FoodTalk.a */; };
+		EE7E20EA7584DCB69F1D0794 /* libPods-FoodTalkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E15C51AD78C4ECEA3FBB85 /* libPods-FoodTalkTests.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4651D01E1D45E1FF0076472E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 466890C71D1E84B50056EA8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 466890CE1D1E84B50056EA8E;
+			remoteInfo = FoodTalk;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		073D83F4000D3F34A306C627 /* Pods-FoodTalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTalkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTalkTests/Pods-FoodTalkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1AC24F589DFA83727454E910 /* libPods-FoodTalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoodTalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		236DD45B96211138C00EAC92 /* Pods-FoodTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTalk/Pods-FoodTalk.release.xcconfig"; sourceTree = "<group>"; };
+		23E15C51AD78C4ECEA3FBB85 /* libPods-FoodTalkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoodTalkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		461D85871D278BB700F9E5D9 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		461D85891D27937700F9E5D9 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		4651D0101D434ACE0076472E /* FoodTalk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodTalk-Bridging-Header.h"; sourceTree = "<group>"; };
+		4651D0131D43590F0076472E /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		4651D0191D45E1FF0076472E /* FoodTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4651D01B1D45E1FF0076472E /* FoodTalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTalkTests.swift; sourceTree = "<group>"; };
+		4651D01D1D45E1FF0076472E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		466890CF1D1E84B50056EA8E /* FoodTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		466890D21D1E84B50056EA8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		466890D41D1E84B50056EA8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		466890D71D1E84B50056EA8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		466890D91D1E84B50056EA8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		466890DC1D1E84B50056EA8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		466890DE1D1E84B50056EA8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		466890E61D1E87060056EA8E /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		466890E81D1F9F070056EA8E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		466890EA1D2628E80056EA8E /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
+		466890EC1D2777480056EA8E /* Transform.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Transform.playground; sourceTree = "<group>"; };
+		466890ED1D2777C80056EA8E /* Restaurant1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant1.swift; sourceTree = "<group>"; };
+		467AD5BB1D3DFA310095CF11 /* Restaurant+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		467AD5BC1D3DFA310095CF11 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		467AD5BF1D409BC70095CF11 /* GuiderContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuiderContentViewController.swift; sourceTree = "<group>"; };
+		467AD5C11D409E2E0095CF11 /* GuiderPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuiderPageViewController.swift; sourceTree = "<group>"; };
+		467AD5C41D41F5C70095CF11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
+		467AD5C61D41F5EA0095CF11 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		467AD5C81D421AF50095CF11 /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		467E566F1D42B0B300E10594 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		46820CF31D42E2B1004F9639 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46FC8F7F1D321CF6005569E1 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		46FC8F811D38BBF3005569E1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		46FC8F831D39AC64005569E1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		46FC8F851D3A3908005569E1 /* AddRestaurantController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRestaurantController.swift; sourceTree = "<group>"; };
+		46FC8FA91D3DF716005569E1 /* FoodTalk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodTalk.xcdatamodel; sourceTree = "<group>"; };
+		9D49CB4AF42E7F3089E45167 /* Pods-FoodTalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTalkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTalkTests/Pods-FoodTalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		F1863542CC8D5B9AC9EF2C31 /* Pods-FoodTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTalk/Pods-FoodTalk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4651D0161D45E1FF0076472E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7E20EA7584DCB69F1D0794 /* libPods-FoodTalkTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		466890CC1D1E84B50056EA8E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FC8F821D38BBF3005569E1 /* MapKit.framework in Frameworks */,
+				B929382AB289D80DD74BA987 /* libPods-FoodTalk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4651D01A1D45E1FF0076472E /* FoodTalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				4651D01B1D45E1FF0076472E /* FoodTalkTests.swift */,
+				4651D01D1D45E1FF0076472E /* Info.plist */,
+			);
+			path = FoodTalkTests;
+			sourceTree = "<group>";
+		};
 		466890C61D1E84B50056EA8E = {
 			isa = PBXGroup;
 			children = (
+				46820CF31D42E2B1004F9639 /* Podfile */,
+				467AD5BB1D3DFA310095CF11 /* Restaurant+CoreDataProperties.swift */,
+				467AD5BC1D3DFA310095CF11 /* Restaurant.swift */,
+				46FC8F811D38BBF3005569E1 /* MapKit.framework */,
 				466890D11D1E84B50056EA8E /* FoodTalk */,
+				4651D01A1D45E1FF0076472E /* FoodTalkTests */,
 				466890D01D1E84B50056EA8E /* Products */,
+				D81E16382E957C0325A95CD0 /* Pods */,
+				EE0619329CB85F368F14DF9F /* Frameworks */,
+				4651D0101D434ACE0076472E /* FoodTalk-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				466890CF1D1E84B50056EA8E /* FoodTalk.app */,
+				4651D0191D45E1FF0076472E /* FoodTalkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,9 +146,26 @@
 		466890D11D1E84B50056EA8E /* FoodTalk */ = {
 			isa = PBXGroup;
 			children = (
-				466890D21D1E84B50056EA8E /* AppDelegate.swift */,
-				466890D41D1E84B50056EA8E /* ViewController.swift */,
 				466890D61D1E84B50056EA8E /* Main.storyboard */,
+				467AD5C61D41F5EA0095CF11 /* About.storyboard */,
+				467AD5C31D41F5C70095CF11 /* Discover.storyboard */,
+				4651D0131D43590F0076472E /* DiscoverTableViewController.swift */,
+				46FC8FA81D3DF716005569E1 /* FoodTalk.xcdatamodeld */,
+				466890D21D1E84B50056EA8E /* AppDelegate.swift */,
+				467AD5C81D421AF50095CF11 /* AboutTableViewController.swift */,
+				467E566F1D42B0B300E10594 /* WebViewController.swift */,
+				467AD5C11D409E2E0095CF11 /* GuiderPageViewController.swift */,
+				467AD5BF1D409BC70095CF11 /* GuiderContentViewController.swift */,
+				46FC8F851D3A3908005569E1 /* AddRestaurantController.swift */,
+				46FC8F831D39AC64005569E1 /* MapViewController.swift */,
+				46FC8F7F1D321CF6005569E1 /* ReviewViewController.swift */,
+				461D85891D27937700F9E5D9 /* DetailTableViewCell.swift */,
+				461D85871D278BB700F9E5D9 /* DetailTableViewController.swift */,
+				466890EA1D2628E80056EA8E /* RestaurantDetailViewController.swift */,
+				466890E81D1F9F070056EA8E /* CustomTableViewCell.swift */,
+				466890E61D1E87060056EA8E /* RestaurantTableViewController.swift */,
+				466890ED1D2777C80056EA8E /* Restaurant1.swift */,
+				466890EC1D2777480056EA8E /* Transform.playground */,
 				466890D91D1E84B50056EA8E /* Assets.xcassets */,
 				466890DB1D1E84B50056EA8E /* LaunchScreen.storyboard */,
 				466890DE1D1E84B50056EA8E /* Info.plist */,
@@ -64,16 +173,60 @@
 			path = FoodTalk;
 			sourceTree = "<group>";
 		};
+		D81E16382E957C0325A95CD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1863542CC8D5B9AC9EF2C31 /* Pods-FoodTalk.debug.xcconfig */,
+				236DD45B96211138C00EAC92 /* Pods-FoodTalk.release.xcconfig */,
+				073D83F4000D3F34A306C627 /* Pods-FoodTalkTests.debug.xcconfig */,
+				9D49CB4AF42E7F3089E45167 /* Pods-FoodTalkTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE0619329CB85F368F14DF9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AC24F589DFA83727454E910 /* libPods-FoodTalk.a */,
+				23E15C51AD78C4ECEA3FBB85 /* libPods-FoodTalkTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4651D0181D45E1FF0076472E /* FoodTalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4651D0201D45E1FF0076472E /* Build configuration list for PBXNativeTarget "FoodTalkTests" */;
+			buildPhases = (
+				1AA4F39165D3A9C4D8017FE8 /* [CP] Check Pods Manifest.lock */,
+				4651D0151D45E1FF0076472E /* Sources */,
+				4651D0161D45E1FF0076472E /* Frameworks */,
+				4651D0171D45E1FF0076472E /* Resources */,
+				23913BB995B9BFF508CDF048 /* [CP] Embed Pods Frameworks */,
+				EFCB01900894A7821383AB91 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4651D01F1D45E1FF0076472E /* PBXTargetDependency */,
+			);
+			name = FoodTalkTests;
+			productName = FoodTalkTests;
+			productReference = 4651D0191D45E1FF0076472E /* FoodTalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		466890CE1D1E84B50056EA8E /* FoodTalk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 466890E11D1E84B50056EA8E /* Build configuration list for PBXNativeTarget "FoodTalk" */;
 			buildPhases = (
+				DD1398D270E94EE291FCAB62 /* [CP] Check Pods Manifest.lock */,
 				466890CB1D1E84B50056EA8E /* Sources */,
 				466890CC1D1E84B50056EA8E /* Frameworks */,
 				466890CD1D1E84B50056EA8E /* Resources */,
+				2CC908AC3D1FF38ABF4BC2E5 /* [CP] Embed Pods Frameworks */,
+				A5C93E25089B757C737471D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -94,8 +247,19 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Luke;
 				TargetAttributes = {
+					4651D0181D45E1FF0076472E = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D89L3P3J9M;
+						TestTargetID = 466890CE1D1E84B50056EA8E;
+					};
 					466890CE1D1E84B50056EA8E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3338WZC9K4;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -113,16 +277,27 @@
 			projectRoot = "";
 			targets = (
 				466890CE1D1E84B50056EA8E /* FoodTalk */,
+				4651D0181D45E1FF0076472E /* FoodTalkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4651D0171D45E1FF0076472E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		466890CD1D1E84B50056EA8E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46820CF41D42E2B1004F9639 /* Podfile in Resources */,
 				466890DD1D1E84B50056EA8E /* LaunchScreen.storyboard in Resources */,
+				467AD5C71D41F5EA0095CF11 /* About.storyboard in Resources */,
+				467AD5C51D41F5C70095CF11 /* Discover.storyboard in Resources */,
 				466890DA1D1E84B50056EA8E /* Assets.xcassets in Resources */,
 				466890D81D1E84B50056EA8E /* Main.storyboard in Resources */,
 			);
@@ -130,17 +305,142 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AA4F39165D3A9C4D8017FE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		23913BB995B9BFF508CDF048 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodTalkTests/Pods-FoodTalkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CC908AC3D1FF38ABF4BC2E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodTalk/Pods-FoodTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5C93E25089B757C737471D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodTalk/Pods-FoodTalk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD1398D270E94EE291FCAB62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFCB01900894A7821383AB91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodTalkTests/Pods-FoodTalkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		4651D0151D45E1FF0076472E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4651D01C1D45E1FF0076472E /* FoodTalkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		466890CB1D1E84B50056EA8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				466890D51D1E84B50056EA8E /* ViewController.swift in Sources */,
+				467AD5BE1D3DFA310095CF11 /* Restaurant.swift in Sources */,
+				461D85881D278BB700F9E5D9 /* DetailTableViewController.swift in Sources */,
+				467AD5C01D409BC70095CF11 /* GuiderContentViewController.swift in Sources */,
+				46FC8FAA1D3DF716005569E1 /* FoodTalk.xcdatamodeld in Sources */,
+				4651D0141D43590F0076472E /* DiscoverTableViewController.swift in Sources */,
+				466890EE1D2777C80056EA8E /* Restaurant1.swift in Sources */,
+				461D858A1D27937700F9E5D9 /* DetailTableViewCell.swift in Sources */,
+				466890E91D1F9F070056EA8E /* CustomTableViewCell.swift in Sources */,
+				46FC8F861D3A3908005569E1 /* AddRestaurantController.swift in Sources */,
+				467AD5BD1D3DFA310095CF11 /* Restaurant+CoreDataProperties.swift in Sources */,
+				46FC8F841D39AC64005569E1 /* MapViewController.swift in Sources */,
+				467AD5C21D409E2E0095CF11 /* GuiderPageViewController.swift in Sources */,
+				467AD5C91D421AF50095CF11 /* AboutTableViewController.swift in Sources */,
+				467E56701D42B0B300E10594 /* WebViewController.swift in Sources */,
+				466890E71D1E87060056EA8E /* RestaurantTableViewController.swift in Sources */,
+				466890EB1D2628E80056EA8E /* RestaurantDetailViewController.swift in Sources */,
+				46FC8F801D321CF6005569E1 /* ReviewViewController.swift in Sources */,
 				466890D31D1E84B50056EA8E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4651D01F1D45E1FF0076472E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 466890CE1D1E84B50056EA8E /* FoodTalk */;
+			targetProxy = 4651D01E1D45E1FF0076472E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		466890D61D1E84B50056EA8E /* Main.storyboard */ = {
@@ -159,9 +459,47 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		467AD5C31D41F5C70095CF11 /* Discover.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				467AD5C41D41F5C70095CF11 /* Base */,
+			);
+			name = Discover.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4651D0211D45E1FF0076472E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 073D83F4000D3F34A306C627 /* Pods-FoodTalkTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FoodTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LukeSwift.FoodTalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodTalk-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodTalk.app/FoodTalk";
+			};
+			name = Debug;
+		};
+		4651D0221D45E1FF0076472E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D49CB4AF42E7F3089E45167 /* Pods-FoodTalkTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FoodTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LukeSwift.FoodTalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodTalk-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodTalk.app/FoodTalk";
+			};
+			name = Release;
+		};
 		466890DF1D1E84B50056EA8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -249,29 +587,51 @@
 		};
 		466890E21D1E84B50056EA8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1863542CC8D5B9AC9EF2C31 /* Pods-FoodTalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FoodTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.LukeSwift.FoodTalk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LukeSwift.FoodTalk02;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodTalk-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		466890E31D1E84B50056EA8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 236DD45B96211138C00EAC92 /* Pods-FoodTalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FoodTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.LukeSwift.FoodTalk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LukeSwift.FoodTalk02;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodTalk-Bridging-Header.h";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4651D0201D45E1FF0076472E /* Build configuration list for PBXNativeTarget "FoodTalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4651D0211D45E1FF0076472E /* Debug */,
+				4651D0221D45E1FF0076472E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		466890CA1D1E84B50056EA8E /* Build configuration list for PBXProject "FoodTalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -288,8 +648,22 @@
 				466890E31D1E84B50056EA8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46FC8FA81D3DF716005569E1 /* FoodTalk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46FC8FA91D3DF716005569E1 /* FoodTalk.xcdatamodel */,
+			);
+			currentVersion = 46FC8FA91D3DF716005569E1 /* FoodTalk.xcdatamodel */;
+			path = FoodTalk.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 466890C71D1E84B50056EA8E /* Project object */;
 }
