@@ -19,6 +19,7 @@
 		466890E91D1F9F070056EA8E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466890E81D1F9F070056EA8E /* CustomTableViewCell.swift */; };
 		466890EB1D2628E80056EA8E /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466890EA1D2628E80056EA8E /* RestaurantDetailViewController.swift */; };
 		466890EE1D2777C80056EA8E /* Restaurant1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466890ED1D2777C80056EA8E /* Restaurant1.swift */; };
+		4674076B1D52A1B2001EDE27 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674076A1D52A1B2001EDE27 /* DiscoverTableViewCell.swift */; };
 		467AD5BD1D3DFA310095CF11 /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AD5BB1D3DFA310095CF11 /* Restaurant+CoreDataProperties.swift */; };
 		467AD5BE1D3DFA310095CF11 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AD5BC1D3DFA310095CF11 /* Restaurant.swift */; };
 		467AD5C01D409BC70095CF11 /* GuiderContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AD5BF1D409BC70095CF11 /* GuiderContentViewController.swift */; };
@@ -28,6 +29,9 @@
 		467AD5C91D421AF50095CF11 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AD5C81D421AF50095CF11 /* AboutTableViewController.swift */; };
 		467E56701D42B0B300E10594 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467E566F1D42B0B300E10594 /* WebViewController.swift */; };
 		46820CF41D42E2B1004F9639 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 46820CF31D42E2B1004F9639 /* Podfile */; };
+		469386BE1D530B0200769C4E /* DiscoverDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469386BD1D530B0200769C4E /* DiscoverDetailTableViewController.swift */; };
+		469386C01D53166500769C4E /* DiscoverDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469386BF1D53166500769C4E /* DiscoverDetailTableViewCell.swift */; };
+		469386C21D534CA500769C4E /* DiscoverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469386C11D534CA500769C4E /* DiscoverMapViewController.swift */; };
 		46FC8F801D321CF6005569E1 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC8F7F1D321CF6005569E1 /* ReviewViewController.swift */; };
 		46FC8F821D38BBF3005569E1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FC8F811D38BBF3005569E1 /* MapKit.framework */; };
 		46FC8F841D39AC64005569E1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC8F831D39AC64005569E1 /* MapViewController.swift */; };
@@ -70,6 +74,7 @@
 		466890EA1D2628E80056EA8E /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		466890EC1D2777480056EA8E /* Transform.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Transform.playground; sourceTree = "<group>"; };
 		466890ED1D2777C80056EA8E /* Restaurant1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant1.swift; sourceTree = "<group>"; };
+		4674076A1D52A1B2001EDE27 /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
 		467AD5BB1D3DFA310095CF11 /* Restaurant+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		467AD5BC1D3DFA310095CF11 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		467AD5BF1D409BC70095CF11 /* GuiderContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuiderContentViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +84,9 @@
 		467AD5C81D421AF50095CF11 /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
 		467E566F1D42B0B300E10594 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		46820CF31D42E2B1004F9639 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		469386BD1D530B0200769C4E /* DiscoverDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverDetailTableViewController.swift; sourceTree = "<group>"; };
+		469386BF1D53166500769C4E /* DiscoverDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverDetailTableViewCell.swift; sourceTree = "<group>"; };
+		469386C11D534CA500769C4E /* DiscoverMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverMapViewController.swift; sourceTree = "<group>"; };
 		46FC8F7F1D321CF6005569E1 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		46FC8F811D38BBF3005569E1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		46FC8F831D39AC64005569E1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +158,10 @@
 				467AD5C61D41F5EA0095CF11 /* About.storyboard */,
 				467AD5C31D41F5C70095CF11 /* Discover.storyboard */,
 				4651D0131D43590F0076472E /* DiscoverTableViewController.swift */,
+				4674076A1D52A1B2001EDE27 /* DiscoverTableViewCell.swift */,
+				469386BD1D530B0200769C4E /* DiscoverDetailTableViewController.swift */,
+				469386BF1D53166500769C4E /* DiscoverDetailTableViewCell.swift */,
+				469386C11D534CA500769C4E /* DiscoverMapViewController.swift */,
 				46FC8FA81D3DF716005569E1 /* FoodTalk.xcdatamodeld */,
 				466890D21D1E84B50056EA8E /* AppDelegate.swift */,
 				467AD5C81D421AF50095CF11 /* AboutTableViewController.swift */,
@@ -413,16 +425,20 @@
 			files = (
 				467AD5BE1D3DFA310095CF11 /* Restaurant.swift in Sources */,
 				461D85881D278BB700F9E5D9 /* DetailTableViewController.swift in Sources */,
+				469386C01D53166500769C4E /* DiscoverDetailTableViewCell.swift in Sources */,
 				467AD5C01D409BC70095CF11 /* GuiderContentViewController.swift in Sources */,
 				46FC8FAA1D3DF716005569E1 /* FoodTalk.xcdatamodeld in Sources */,
 				4651D0141D43590F0076472E /* DiscoverTableViewController.swift in Sources */,
+				469386C21D534CA500769C4E /* DiscoverMapViewController.swift in Sources */,
 				466890EE1D2777C80056EA8E /* Restaurant1.swift in Sources */,
 				461D858A1D27937700F9E5D9 /* DetailTableViewCell.swift in Sources */,
+				469386BE1D530B0200769C4E /* DiscoverDetailTableViewController.swift in Sources */,
 				466890E91D1F9F070056EA8E /* CustomTableViewCell.swift in Sources */,
 				46FC8F861D3A3908005569E1 /* AddRestaurantController.swift in Sources */,
 				467AD5BD1D3DFA310095CF11 /* Restaurant+CoreDataProperties.swift in Sources */,
 				46FC8F841D39AC64005569E1 /* MapViewController.swift in Sources */,
 				467AD5C21D409E2E0095CF11 /* GuiderPageViewController.swift in Sources */,
+				4674076B1D52A1B2001EDE27 /* DiscoverTableViewCell.swift in Sources */,
 				467AD5C91D421AF50095CF11 /* AboutTableViewController.swift in Sources */,
 				467E56701D42B0B300E10594 /* WebViewController.swift in Sources */,
 				466890E71D1E87060056EA8E /* RestaurantTableViewController.swift in Sources */,

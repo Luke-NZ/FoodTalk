@@ -8,12 +8,32 @@
 
 import UIKit
 
-class DiscoverTableViewController: UITableViewController {
+class DiscoverTableViewController: UITableViewController, UISearchResultsUpdating {
     
     @IBOutlet var spinner: UIActivityIndicatorView!
     
     var restaurants: [AVObject] = []
     
+    var sc: UISearchController!
+    
+    var sr: [AVObject] = []
+    
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        if var textToSearch = sc.searchBar.text {
+            
+            textToSearch = textToSearch.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+            searchFilter(textToSearch)
+            tableView.reloadData()
+        }
+    }
+     
+    func searchFilter (textToSearch: String) {
+        
+        sr = restaurants.filter({ (r) -> Bool in
+            return r["name"].containsString(textToSearch)
+        })
+    }
+
     func getNewData() {
         getRecordFromCloud(true)
     }
@@ -57,6 +77,12 @@ class DiscoverTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        sc = UISearchController(searchResultsController: nil)
+        tableView.tableHeaderView = sc.searchBar
+        sc.searchResultsUpdater = self
+        sc.dimsBackgroundDuringPresentation = false
+        sc.searchBar.placeholder = "Search by restaurant name"
+        
         spinner.hidesWhenStopped = true
         spinner.center = view.center
         view.addSubview(spinner)
@@ -90,21 +116,28 @@ class DiscoverTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return restaurants.count
+        if sc.active {
+            return sr.count
+        } else {
+            return restaurants.count
+        }
+        
     }
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! DiscoverTableViewCell
 
         // Configure the cell...
-        let restaurant = restaurants[indexPath.row]
-        
-        cell.textLabel?.text = restaurant["name"] as? String
+        let restaurant = sc.active ? sr[indexPath.row] : restaurants[indexPath.row]
+
+        cell.restaurantName.text = restaurant["name"] as? String
+        cell.restaurantLocation.text = restaurant["location"] as? String
+        cell.restaurantType.text = restaurant["type"] as? String
         
         // Local Image Placeholder
-        cell.imageView?.image = UIImage(named: "photoalbum")
+        cell.restaurantImage.image = UIImage(named: "photoalbum")
         
         if let img = restaurant["image"] as? AVFile {
             
@@ -117,7 +150,11 @@ class DiscoverTableViewController: UITableViewController {
                 
                 NSOperationQueue.mainQueue().addOperationWithBlock({ 
                     
-                    cell.imageView?.image = UIImage(data: img.getData())
+                    cell.restaurantImage.image = UIImage(data: img.getData())
+                    
+                    cell.restaurantImage.layer.cornerRadius = cell.restaurantImage.frame.size.width / 3
+                    cell.restaurantImage.clipsToBounds = true
+
                 })
             })
         }
@@ -125,12 +162,11 @@ class DiscoverTableViewController: UITableViewController {
         return cell
     }
 
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
-        return true
+        return !sc.active
     }
     */
 
@@ -161,14 +197,25 @@ class DiscoverTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "discoverRestaurantDetail" {
+            
+            let destVC = segue.destinationViewController as! DiscoverDetailTableViewController
+            
+            destVC.restaurant = sc.active ? sr[(tableView.indexPathForSelectedRow!.row)] : restaurants[(tableView.indexPathForSelectedRow!.row)]
+            
+        }
+
     }
-    */
+
 
 }

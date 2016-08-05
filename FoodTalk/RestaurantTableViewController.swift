@@ -1,4 +1,4 @@
- //
+//
 //  RestaurantTableViewController.swift
 //  FoodTalk
 //
@@ -234,6 +234,7 @@ class RestaurantTableViewController: UITableViewController,NSFetchedResultsContr
     // Override to support customised row action
     override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
         
+        /*
         let shareAction = UITableViewRowAction(style: .Default, title: "Share") { (action, indexPath) -> Void in
             
             let alert = UIAlertController(title: "Share to", message: "Social Media", preferredStyle: .ActionSheet)
@@ -255,7 +256,8 @@ class RestaurantTableViewController: UITableViewController,NSFetchedResultsContr
         
 //        shareAction.backgroundColor = UIColor.grayColor()
         shareAction.backgroundColor = UIColor(red: 11/255, green: 56/255, blue: 156/255, alpha: 1)
-        
+        */
+  
         let deleteAction = UITableViewRowAction(style: .Default, title: "Delete") { (action, indexPath) in
             
             let buffer = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
@@ -271,7 +273,9 @@ class RestaurantTableViewController: UITableViewController,NSFetchedResultsContr
             
         }
         
-        return [shareAction,deleteAction   ]
+//        return [shareAction,deleteAction   ]
+        return [deleteAction]
+
     }
 
     /*

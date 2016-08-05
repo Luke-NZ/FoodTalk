@@ -1,42 +1,33 @@
 //
-//  DetailTableViewController.swift
+//  DiscoverDetailTableViewController.swift
 //  FoodTalk
 //
-//  Created by 李远 on 2/07/16.
+//  Created by 李远 on 4/08/16.
 //  Copyright © 2016 Luke. All rights reserved.
 //
 
 import UIKit
-import CoreData
 
-class DetailTableViewController: UITableViewController,NSFetchedResultsControllerDelegate {
-    
-    var restaurant: Restaurant!
-    var frc : NSFetchedResultsController!
+class DiscoverDetailTableViewController: UITableViewController {
+
+    var restaurant = AVObject(className: "Restaurant")
 
     @IBOutlet weak var imageView: UIImageView!
-    
-    @IBOutlet weak var ratingBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageView.image = UIImage(data: restaurant.image!)
-        
-        tableView.backgroundColor = UIColor(white: 0.95, alpha: 1)
-        tableView.tableFooterView = UIView(frame: CGRectZero)
-        tableView.separatorColor = UIColor(white: 0.8, alpha: 1)
-        title = restaurant.name
-        
-        tableView.estimatedRowHeight = 36
-        tableView.rowHeight = UITableViewAutomaticDimension
-        
-        if restaurant.rating != nil {
-            
-            ratingBtn.setImage(UIImage(named: restaurant.rating!), forState: .Normal)
+        if let img = restaurant["image"] as? AVFile {
+            imageView?.image = UIImage(data: img.getData())
         }
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -54,37 +45,35 @@ class DetailTableViewController: UITableViewController,NSFetchedResultsControlle
         return 4
     }
 
-    
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("DetailCell", forIndexPath: indexPath) as! DetailTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("discoverDetailCell", forIndexPath: indexPath) as! DiscoverDetailTableViewCell
 
         // Configure the cell...
-        
+
         switch indexPath.row {
-            
         case 0:
             cell.fieldLabel.text = "Name"
-            cell.valueLabel.text = restaurant.name
+            cell.valueLabel.text = restaurant["name"] as? String
         case 1:
             cell.fieldLabel.text = "Type"
-            cell.valueLabel.text = restaurant.type
+            cell.valueLabel.text = restaurant["type"] as? String
         case 2:
             cell.fieldLabel.text = "Location"
-            cell.valueLabel.text = restaurant.location
-        case 3:
-            cell.fieldLabel.text = "Visited?"
-            cell.valueLabel.text = restaurant.isVisited.boolValue ? "Yes" : "No"
+            cell.valueLabel.text = restaurant["location"] as? String
+            
+//        case 3:
+//            cell.fieldLabel.text = "来过与否"
+//            cell.valueLabel.text = restaurant["isVisited"] as？Boolean ? "来过了" : "没来过"
         default:
             cell.fieldLabel.text = ""
             cell.valueLabel.text = ""
         }
         
-        cell.backgroundColor = UIColor.clearColor()
-        
         return cell
     }
- 
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -125,36 +114,16 @@ class DetailTableViewController: UITableViewController,NSFetchedResultsControlle
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        if segue.identifier == "showMap" {
-            
-            let destVC = segue.destinationViewController as! MapViewController
+        if segue.identifier == "discoverShowMap" {
+            let destVC = segue.destinationViewController as! DiscoverMapViewController
             destVC.restaurant = self.restaurant
         }
+
     }
 
 
-    @IBAction func close(segue: UIStoryboardSegue) {
-        
-        if let sourceVC = segue.sourceViewController as? ReviewViewController {
-            
-            if let rating = sourceVC.rating {
-                self.restaurant.rating = rating
-                self.ratingBtn.setImage(UIImage(named: rating), forState: .Normal)
-                
-                let buffer = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
-                
-                do {
-                    try buffer?.save()
-                } catch {
-                    print(error)
-                }
-            }
-        }
-        
-    }
 }
