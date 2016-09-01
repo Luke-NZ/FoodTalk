@@ -76,13 +76,20 @@ class RestaurantTableViewController: UITableViewController,NSFetchedResultsContr
         
         let defaults = NSUserDefaults.standardUserDefaults()
         
-        if defaults.boolForKey("GuiderShowed") {
-            return
+        if !defaults.boolForKey("GuiderShowed") {
+            
+            if let guideVC = storyboard?.instantiateViewControllerWithIdentifier("GuideController") as? GuiderPageViewController {
+                
+                presentViewController(guideVC,animated:true,completion:nil)
+            }
         }
         
-        if let guideVC = storyboard?.instantiateViewControllerWithIdentifier("GuideController") as? GuiderPageViewController {
-            
-            presentViewController(guideVC,animated:true,completion:nil)
+        if !defaults.boolForKey("EULAShowed") {
+            if let guideVC1 = storyboard?.instantiateViewControllerWithIdentifier("GuiderEULAController") as? GuiderEULAViewController {
+                
+                presentViewController(guideVC1,animated:true,completion:nil)
+            }
+            return
         }
     }
     

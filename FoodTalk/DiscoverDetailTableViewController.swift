@@ -21,6 +21,11 @@ class DiscoverDetailTableViewController: UITableViewController {
             imageView?.image = UIImage(data: img.getData())
         }
 
+        tableView.estimatedRowHeight = 36
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        tableView.tableFooterView = UIView(frame: CGRectZero)
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -42,7 +47,7 @@ class DiscoverDetailTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return 3
     }
 
 

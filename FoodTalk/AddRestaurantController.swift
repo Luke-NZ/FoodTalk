@@ -61,6 +61,7 @@ class AddRestaurantController: UITableViewController,UIImagePickerControllerDele
         record["name"] = restaurant.name
         record["type"] = restaurant.type
         record["location"] = restaurant.location
+        record["abuse"] = false
         
         let originImg = UIImage(data: restaurant.image!)!
         let scalingFac = (originImg.size.width > 1024) ? 1024 / originImg.size.width : 1.0

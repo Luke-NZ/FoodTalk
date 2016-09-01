@@ -23,7 +23,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customization" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hT-s1-ZaJ">
                                 <rect key="frame" x="220" y="20" width="160" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gkh-b5-C9e">
@@ -35,7 +35,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your favorite restaurant anytime anywhere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bal-GV-e0m">
                                 <rect key="frame" x="122" y="539" width="357" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gIH-H4-v9M">
@@ -285,6 +285,97 @@
             </objects>
             <point key="canvasLocation" x="3391" y="1"/>
         </scene>
+        <!--GuiderEULA View Controller-->
+        <scene sceneID="Dds-qm-00q">
+            <objects>
+                <viewController storyboardIdentifier="GuiderEULAController" id="ZKD-5M-HcC" customClass="GuiderEULAViewController" customModule="FoodTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hFC-WC-uvH"/>
+                        <viewControllerLayoutGuide type="bottom" id="OIY-SN-xgW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FHc-KW-i7y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End User License Agreement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OQ-zZ-ieL">
+                                <rect key="frame" x="189" y="20" width="222" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nMx-1Y-0fn">
+                                <rect key="frame" x="20" y="49" width="560" height="501"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zpv-qH-m2b">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="317.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihn-9g-rKx">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="317.5"/>
+                                                <string key="text">This End User License Agreement (“Agreement”) is between you and FoodTalk NZ and governs use of this app made available through the Apple App Store. By installing the FoodTalk NZ App, you agree to be bound by this Agreement and understand that there is no tolerance for objectionable content. If you do not agree with the terms and conditions of this Agreement, you are not entitled to use the FoodTalk NZ App.
+In order to ensure FoodTalk NZ provides the best experience possible for everyone, we strongly enforce a no tolerance policy for objectionable content. If you see inappropriate content, please use the “Report as offensive” feature found under each post.
+Content may not be submitted to FoodTalk NZ, who will moderate all content and ultimately decide whether or not to post a submission to the extent such content includes, is in conjunction with, or alongside any, Objectionable Content. Objectionable Content includes, but is not limited to: (i) sexually explicit materials; (ii) obscene, defamatory, libelous, slanderous, violent and/or unlawful content or profanity; (iii) content that infringes upon the rights of any third party, including copyright, trademark, privacy, publicity or other personal or proprietary right, or that is deceptive or fraudulent; (iv) content that promotes the use or sale of illegal or regulated substances, tobacco products, ammunition and/or firearms; and (v) gambling, including without limitation, any online casino, sports books, bingo or poker.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <string key="userLabel">End User License Agreement (“Agreement”) is between you and FoodTalk NZ and governs use of this app made available through the Apple App Store. By installing the FoodTalk NZ App, you agree to be bound by this Agreement and understand that there is no tolerance for objectionable content. If you do not agree with the terms and conditions of this Agreement, you are not entitled to use the FoodTalk NZ App. In order to ensure FoodTalk NZ provides the best experience possible for everyone, we strongly enforce a no tolerance policy for objectionable content. If you see inappropriate content, please use the “Report as offensive” feature found under each post. Content may not be submitted to FoodTalk NZ, who will moderate all content and ultimately decide whether or not to post a submission to the extent such content includes, is in conjunction with, or alongside any, Objectionable Content. Objectionable Content includes, but is not limited to: (i) sexually explicit materials; (ii) obscene, defamatory, libelous, slanderous, violent and/or unlawful content or profanity; (iii) content that infringes upon the rights of any third party, including copyright, trademark, privacy, publicity or other personal or proprietary right, or that is deceptive or fraudulent; (iv) content that promotes the use or sale of illegal or regulated substances, tobacco products, ammunition and/or firearms; and (v) gambling, including without limitation, any online casino, sports books, bingo or poker.</string>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ihn-9g-rKx" secondAttribute="trailing" id="MJU-cc-Zf8"/>
+                                            <constraint firstItem="ihn-9g-rKx" firstAttribute="top" secondItem="Zpv-qH-m2b" secondAttribute="top" id="Ndh-ac-5VG"/>
+                                            <constraint firstItem="ihn-9g-rKx" firstAttribute="leading" secondItem="Zpv-qH-m2b" secondAttribute="leading" id="OVn-aF-Hlg"/>
+                                            <constraint firstItem="ihn-9g-rKx" firstAttribute="width" secondItem="Zpv-qH-m2b" secondAttribute="width" id="UoZ-en-Y7H"/>
+                                            <constraint firstAttribute="bottom" secondItem="ihn-9g-rKx" secondAttribute="bottom" id="oyK-iT-okw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Zpv-qH-m2b" firstAttribute="leading" secondItem="nMx-1Y-0fn" secondAttribute="leading" id="32J-jo-D5o"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zpv-qH-m2b" secondAttribute="trailing" id="42y-b1-On6"/>
+                                    <constraint firstItem="Zpv-qH-m2b" firstAttribute="top" secondItem="nMx-1Y-0fn" secondAttribute="top" id="6a1-zR-ARR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zpv-qH-m2b" secondAttribute="bottom" id="7dH-0i-5f7"/>
+                                    <constraint firstItem="Zpv-qH-m2b" firstAttribute="width" secondItem="nMx-1Y-0fn" secondAttribute="width" id="Fx4-SY-stN"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sg-fd-bVy">
+                                <rect key="frame" x="100" y="558" width="41" height="30"/>
+                                <state key="normal" title="Agree"/>
+                                <connections>
+                                    <action selector="agreeBtnTapped:" destination="ZKD-5M-HcC" eventType="touchUpInside" id="su0-wl-XRf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4j-8O-TyV">
+                                <rect key="frame" x="431" y="558" width="69" height="30"/>
+                                <state key="normal" title="No,thanks"/>
+                                <connections>
+                                    <action selector="noBtnTapped:" destination="ZKD-5M-HcC" eventType="touchUpInside" id="dBj-wT-NNF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OIY-SN-xgW" firstAttribute="top" secondItem="nMx-1Y-0fn" secondAttribute="bottom" constant="50" id="0xC-Ir-ayz"/>
+                            <constraint firstItem="nMx-1Y-0fn" firstAttribute="centerX" secondItem="1OQ-zZ-ieL" secondAttribute="centerX" id="2Dl-iF-rda"/>
+                            <constraint firstItem="nMx-1Y-0fn" firstAttribute="leading" secondItem="FHc-KW-i7y" secondAttribute="leadingMargin" id="5bb-DX-xlc"/>
+                            <constraint firstItem="S4j-8O-TyV" firstAttribute="baseline" secondItem="1sg-fd-bVy" secondAttribute="baseline" id="KQ4-t3-0fO"/>
+                            <constraint firstAttribute="trailing" secondItem="S4j-8O-TyV" secondAttribute="trailing" constant="100" id="TJW-ep-pbw"/>
+                            <constraint firstItem="1OQ-zZ-ieL" firstAttribute="top" secondItem="hFC-WC-uvH" secondAttribute="bottom" id="XVI-FP-uNg"/>
+                            <constraint firstItem="nMx-1Y-0fn" firstAttribute="top" secondItem="1OQ-zZ-ieL" secondAttribute="bottom" constant="8" symbolic="YES" id="fV3-cW-3Ws"/>
+                            <constraint firstItem="1OQ-zZ-ieL" firstAttribute="centerX" secondItem="FHc-KW-i7y" secondAttribute="centerX" id="g27-7A-Fru"/>
+                            <constraint firstItem="1sg-fd-bVy" firstAttribute="top" secondItem="nMx-1Y-0fn" secondAttribute="bottom" constant="8" symbolic="YES" id="jpa-DC-Yox"/>
+                            <constraint firstItem="1sg-fd-bVy" firstAttribute="leading" secondItem="FHc-KW-i7y" secondAttribute="leading" constant="100" id="q8g-iO-NBQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="agreeBtn" destination="1sg-fd-bVy" id="bAY-bj-QUL"/>
+                        <outlet property="noBtn" destination="S4j-8O-TyV" id="JzV-hO-4rd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yPS-uG-pat" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4078" y="-700"/>
+        </scene>
         <!--Review View Controller-->
         <scene sceneID="wjF-mX-jkJ">
             <objects>
@@ -492,7 +583,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ8-bZ-4iJ">
                                                     <rect key="frame" x="12" y="8" width="45" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Restaurant Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4fd-bf-V3O">
@@ -525,7 +616,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQZ-Mm-y6x">
                                                     <rect key="frame" x="12" y="8" width="38" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -553,7 +644,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVb-S6-SCY">
                                                     <rect key="frame" x="12" y="8" width="66" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -576,7 +667,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visited?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7N-pg-lyB">
                                                     <rect key="frame" x="12" y="8" width="61" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" tag="8001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6K2-gD-LNS">

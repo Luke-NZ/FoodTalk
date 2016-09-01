@@ -19,6 +19,7 @@
 		466890E91D1F9F070056EA8E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466890E81D1F9F070056EA8E /* CustomTableViewCell.swift */; };
 		466890EB1D2628E80056EA8E /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466890EA1D2628E80056EA8E /* RestaurantDetailViewController.swift */; };
 		466890EE1D2777C80056EA8E /* Restaurant1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466890ED1D2777C80056EA8E /* Restaurant1.swift */; };
+		466E82341D78D4650074D589 /* GuiderEULAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E82331D78D4650074D589 /* GuiderEULAViewController.swift */; };
 		4674076B1D52A1B2001EDE27 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674076A1D52A1B2001EDE27 /* DiscoverTableViewCell.swift */; };
 		467AD5BD1D3DFA310095CF11 /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AD5BB1D3DFA310095CF11 /* Restaurant+CoreDataProperties.swift */; };
 		467AD5BE1D3DFA310095CF11 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AD5BC1D3DFA310095CF11 /* Restaurant.swift */; };
@@ -74,6 +75,7 @@
 		466890EA1D2628E80056EA8E /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		466890EC1D2777480056EA8E /* Transform.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Transform.playground; sourceTree = "<group>"; };
 		466890ED1D2777C80056EA8E /* Restaurant1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant1.swift; sourceTree = "<group>"; };
+		466E82331D78D4650074D589 /* GuiderEULAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuiderEULAViewController.swift; sourceTree = "<group>"; };
 		4674076A1D52A1B2001EDE27 /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
 		467AD5BB1D3DFA310095CF11 /* Restaurant+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		467AD5BC1D3DFA310095CF11 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				467E566F1D42B0B300E10594 /* WebViewController.swift */,
 				467AD5C11D409E2E0095CF11 /* GuiderPageViewController.swift */,
 				467AD5BF1D409BC70095CF11 /* GuiderContentViewController.swift */,
+				466E82331D78D4650074D589 /* GuiderEULAViewController.swift */,
 				46FC8F851D3A3908005569E1 /* AddRestaurantController.swift */,
 				46FC8F831D39AC64005569E1 /* MapViewController.swift */,
 				46FC8F7F1D321CF6005569E1 /* ReviewViewController.swift */,
@@ -436,6 +439,7 @@
 				466890E91D1F9F070056EA8E /* CustomTableViewCell.swift in Sources */,
 				46FC8F861D3A3908005569E1 /* AddRestaurantController.swift in Sources */,
 				467AD5BD1D3DFA310095CF11 /* Restaurant+CoreDataProperties.swift in Sources */,
+				466E82341D78D4650074D589 /* GuiderEULAViewController.swift in Sources */,
 				46FC8F841D39AC64005569E1 /* MapViewController.swift in Sources */,
 				467AD5C21D409E2E0095CF11 /* GuiderPageViewController.swift in Sources */,
 				4674076B1D52A1B2001EDE27 /* DiscoverTableViewCell.swift in Sources */,

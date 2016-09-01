@@ -42,8 +42,8 @@ class GuiderContentViewController: UIViewController {
         if index == 2 {
             
             doneBtn.hidden = false
-            doneBtn.setTitle("Try Now", forState: .Normal)
-        
+            doneBtn.setTitle("Start", forState: .Normal)
+            
         } else {
             doneBtn.hidden = true
         }

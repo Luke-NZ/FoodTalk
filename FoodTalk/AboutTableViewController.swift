@@ -12,7 +12,7 @@ import SafariServices
 class AboutTableViewController: UITableViewController {
 
     var sectionTitle = ["Contact me"]
-    var sectionContent = ["luke.li.yuan@gmail.com","Apple.com"]
+    var sectionContent = ["luke.li.yuan@gmail.com"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,7 @@ class AboutTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 1
     }
 
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

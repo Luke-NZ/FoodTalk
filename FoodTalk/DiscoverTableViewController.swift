@@ -82,7 +82,7 @@ class DiscoverTableViewController: UITableViewController, UISearchResultsUpdatin
         sc.searchResultsUpdater = self
         sc.dimsBackgroundDuringPresentation = false
         sc.searchBar.placeholder = "Search by restaurant name"
-        
+                
         spinner.hidesWhenStopped = true
         spinner.center = view.center
         view.addSubview(spinner)
@@ -162,6 +162,49 @@ class DiscoverTableViewController: UITableViewController, UISearchResultsUpdatin
         return cell
     }
 
+    // Override to support customised row action
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        
+        let reportAction = UITableViewRowAction(style: .Default, title: "Report as offensive") { (action, indexPath) -> Void in
+            
+            let alert = UIAlertController(title: "Report", message: "Objectionable Content", preferredStyle: .ActionSheet)
+            
+            let alert1 = UIAlertController(title: nil, message: "Submission Successful", preferredStyle: .Alert)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+            
+            let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+
+            let submitAction = UIAlertAction(title: "Submit", style: .Default, handler: { (UIAlertAction) in
+
+                let restaurant = self.sc.active ? self.sr[indexPath.row] : self.restaurants[indexPath.row]
+                
+                restaurant["abuse"] = true
+                
+                restaurant.saveInBackgroundWithBlock { (isSuceeded, errorMsg) in
+                    
+                    if let e = errorMsg {
+                        print (e.localizedDescription)
+                    } else {
+                        print ("Abuse marked successfully!")
+                        
+                        alert1.addAction(okAction)
+
+                        self.presentViewController(alert1, animated: true, completion: nil)
+                    }
+                }
+
+            })
+            
+            alert.addAction(submitAction)
+            alert.addAction(cancelAction)
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
+        return [reportAction]
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

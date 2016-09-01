@@ -38,7 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        [AVOSCloud setApplicationId:@"nSX5RFVLihFOtFD3WlLjfgL5-gzGzoHsz"
 //        clientKey:@"X4S9D3b7ytqEQvSkoVXNU9XB"];
 
-        AVOSCloud.setApplicationId("nSX5RFVLihFOtFD3WlLjfgL5-gzGzoHsz", clientKey: "X4S9D3b7ytqEQvSkoVXNU9XB")
+        AVOSCloud.setServiceRegion(AVServiceRegion.US)
+        AVOSCloud.setApplicationId("Q3VaU8Meyva8VHqUL8kuzUIS-MdYXbMMI", clientKey: "7c56sBYdf8gDYw8ItG3oh3k4")
         
         return true
     }
