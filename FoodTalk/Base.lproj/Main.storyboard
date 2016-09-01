@@ -3,82 +3,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Guider Content View Controller-->
-        <scene sceneID="ZC2-9K-FZd">
-            <objects>
-                <viewController storyboardIdentifier="GuiderContentController" id="zne-WW-ddr" customClass="GuiderContentViewController" customModule="FoodTalk" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kde-hh-stB"/>
-                        <viewControllerLayoutGuide type="bottom" id="VTt-Gn-mbc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GJR-9Q-tnV">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customization" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hT-s1-ZaJ">
-                                <rect key="frame" x="220" y="20" width="160" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gkh-b5-C9e">
-                                <rect key="frame" x="30" y="74" width="540" height="418"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Gkh-b5-C9e" secondAttribute="height" multiplier="270:209" id="tOs-Ym-GKX"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your favorite restaurant anytime anywhere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bal-GV-e0m">
-                                <rect key="frame" x="122" y="539" width="357" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gIH-H4-v9M">
-                                <rect key="frame" x="281" y="565" width="39" height="37"/>
-                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="km2-Ej-hK5">
-                                <rect key="frame" x="534" y="562" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="doneBtnTapped:" destination="zne-WW-ddr" eventType="touchUpInside" id="Q4V-rh-Eit"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="bal-GV-e0m" firstAttribute="centerX" secondItem="GJR-9Q-tnV" secondAttribute="centerX" id="D2W-O2-Rel"/>
-                            <constraint firstItem="2hT-s1-ZaJ" firstAttribute="centerX" secondItem="GJR-9Q-tnV" secondAttribute="centerX" id="OsO-BZ-6f0"/>
-                            <constraint firstItem="gIH-H4-v9M" firstAttribute="bottom" secondItem="VTt-Gn-mbc" secondAttribute="top" constant="2" id="Tsa-Zb-AOC"/>
-                            <constraint firstItem="km2-Ej-hK5" firstAttribute="trailing" secondItem="GJR-9Q-tnV" secondAttribute="trailingMargin" id="V1f-Sv-mct"/>
-                            <constraint firstItem="2hT-s1-ZaJ" firstAttribute="top" secondItem="kde-hh-stB" secondAttribute="bottom" id="YNw-9E-5Pi"/>
-                            <constraint firstItem="VTt-Gn-mbc" firstAttribute="top" secondItem="bal-GV-e0m" secondAttribute="bottom" constant="40" id="aqF-XM-nJQ"/>
-                            <constraint firstItem="Gkh-b5-C9e" firstAttribute="leading" secondItem="GJR-9Q-tnV" secondAttribute="leadingMargin" constant="10" id="gS3-uk-OUg"/>
-                            <constraint firstItem="Gkh-b5-C9e" firstAttribute="centerX" secondItem="2hT-s1-ZaJ" secondAttribute="centerX" id="hTh-yS-MPy"/>
-                            <constraint firstItem="km2-Ej-hK5" firstAttribute="top" secondItem="bal-GV-e0m" secondAttribute="top" constant="23" id="iN7-Oq-cfW"/>
-                            <constraint firstItem="Gkh-b5-C9e" firstAttribute="top" secondItem="2hT-s1-ZaJ" secondAttribute="bottom" constant="24" id="mbB-FN-Iwz"/>
-                            <constraint firstItem="gIH-H4-v9M" firstAttribute="centerX" secondItem="GJR-9Q-tnV" secondAttribute="centerX" id="qtf-hT-8Yw"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="doneBtn" destination="km2-Ej-hK5" id="qHp-ge-Q4g"/>
-                        <outlet property="imageView" destination="Gkh-b5-C9e" id="oRj-Vq-SGb"/>
-                        <outlet property="labelFooter" destination="bal-GV-e0m" id="OFQ-VK-ZXl"/>
-                        <outlet property="labelHeading" destination="2hT-s1-ZaJ" id="bCb-aI-zkW"/>
-                        <outlet property="pageCtrl" destination="gIH-H4-v9M" id="8mi-hw-FgJ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A4X-cU-SUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3391" y="-700"/>
-        </scene>
-        <!--Food Talk-->
+        <!--Favorites-->
         <scene sceneID="NW6-YG-1WL">
             <objects>
                 <tableViewController storyboardIdentifier="restaurantsTableView" id="fwC-h4-ZOc" customClass="RestaurantTableViewController" customModule="FoodTalk" customModuleProvider="target" sceneMemberID="viewController">
@@ -155,7 +84,7 @@
                             <outlet property="delegate" destination="fwC-h4-ZOc" id="hbV-hv-g5e"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Food Talk" id="iTZ-85-bAX">
+                    <navigationItem key="navigationItem" title="Favorites" id="iTZ-85-bAX">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="K3P-e6-Xac">
                             <connections>
                                 <segue destination="nFB-XA-6Av" kind="presentation" identifier="addRestaurant" id="9Wl-UR-7lD"/>
@@ -284,97 +213,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOA-u2-yvn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3391" y="1"/>
-        </scene>
-        <!--GuiderEULA View Controller-->
-        <scene sceneID="Dds-qm-00q">
-            <objects>
-                <viewController storyboardIdentifier="GuiderEULAController" id="ZKD-5M-HcC" customClass="GuiderEULAViewController" customModule="FoodTalk" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hFC-WC-uvH"/>
-                        <viewControllerLayoutGuide type="bottom" id="OIY-SN-xgW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FHc-KW-i7y">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End User License Agreement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OQ-zZ-ieL">
-                                <rect key="frame" x="189" y="20" width="222" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nMx-1Y-0fn">
-                                <rect key="frame" x="20" y="49" width="560" height="501"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zpv-qH-m2b">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="317.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihn-9g-rKx">
-                                                <rect key="frame" x="0.0" y="0.0" width="560" height="317.5"/>
-                                                <string key="text">This End User License Agreement (“Agreement”) is between you and FoodTalk NZ and governs use of this app made available through the Apple App Store. By installing the FoodTalk NZ App, you agree to be bound by this Agreement and understand that there is no tolerance for objectionable content. If you do not agree with the terms and conditions of this Agreement, you are not entitled to use the FoodTalk NZ App.
-In order to ensure FoodTalk NZ provides the best experience possible for everyone, we strongly enforce a no tolerance policy for objectionable content. If you see inappropriate content, please use the “Report as offensive” feature found under each post.
-Content may not be submitted to FoodTalk NZ, who will moderate all content and ultimately decide whether or not to post a submission to the extent such content includes, is in conjunction with, or alongside any, Objectionable Content. Objectionable Content includes, but is not limited to: (i) sexually explicit materials; (ii) obscene, defamatory, libelous, slanderous, violent and/or unlawful content or profanity; (iii) content that infringes upon the rights of any third party, including copyright, trademark, privacy, publicity or other personal or proprietary right, or that is deceptive or fraudulent; (iv) content that promotes the use or sale of illegal or regulated substances, tobacco products, ammunition and/or firearms; and (v) gambling, including without limitation, any online casino, sports books, bingo or poker.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <string key="userLabel">End User License Agreement (“Agreement”) is between you and FoodTalk NZ and governs use of this app made available through the Apple App Store. By installing the FoodTalk NZ App, you agree to be bound by this Agreement and understand that there is no tolerance for objectionable content. If you do not agree with the terms and conditions of this Agreement, you are not entitled to use the FoodTalk NZ App. In order to ensure FoodTalk NZ provides the best experience possible for everyone, we strongly enforce a no tolerance policy for objectionable content. If you see inappropriate content, please use the “Report as offensive” feature found under each post. Content may not be submitted to FoodTalk NZ, who will moderate all content and ultimately decide whether or not to post a submission to the extent such content includes, is in conjunction with, or alongside any, Objectionable Content. Objectionable Content includes, but is not limited to: (i) sexually explicit materials; (ii) obscene, defamatory, libelous, slanderous, violent and/or unlawful content or profanity; (iii) content that infringes upon the rights of any third party, including copyright, trademark, privacy, publicity or other personal or proprietary right, or that is deceptive or fraudulent; (iv) content that promotes the use or sale of illegal or regulated substances, tobacco products, ammunition and/or firearms; and (v) gambling, including without limitation, any online casino, sports books, bingo or poker.</string>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="ihn-9g-rKx" secondAttribute="trailing" id="MJU-cc-Zf8"/>
-                                            <constraint firstItem="ihn-9g-rKx" firstAttribute="top" secondItem="Zpv-qH-m2b" secondAttribute="top" id="Ndh-ac-5VG"/>
-                                            <constraint firstItem="ihn-9g-rKx" firstAttribute="leading" secondItem="Zpv-qH-m2b" secondAttribute="leading" id="OVn-aF-Hlg"/>
-                                            <constraint firstItem="ihn-9g-rKx" firstAttribute="width" secondItem="Zpv-qH-m2b" secondAttribute="width" id="UoZ-en-Y7H"/>
-                                            <constraint firstAttribute="bottom" secondItem="ihn-9g-rKx" secondAttribute="bottom" id="oyK-iT-okw"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Zpv-qH-m2b" firstAttribute="leading" secondItem="nMx-1Y-0fn" secondAttribute="leading" id="32J-jo-D5o"/>
-                                    <constraint firstAttribute="trailing" secondItem="Zpv-qH-m2b" secondAttribute="trailing" id="42y-b1-On6"/>
-                                    <constraint firstItem="Zpv-qH-m2b" firstAttribute="top" secondItem="nMx-1Y-0fn" secondAttribute="top" id="6a1-zR-ARR"/>
-                                    <constraint firstAttribute="bottom" secondItem="Zpv-qH-m2b" secondAttribute="bottom" id="7dH-0i-5f7"/>
-                                    <constraint firstItem="Zpv-qH-m2b" firstAttribute="width" secondItem="nMx-1Y-0fn" secondAttribute="width" id="Fx4-SY-stN"/>
-                                </constraints>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sg-fd-bVy">
-                                <rect key="frame" x="100" y="558" width="41" height="30"/>
-                                <state key="normal" title="Agree"/>
-                                <connections>
-                                    <action selector="agreeBtnTapped:" destination="ZKD-5M-HcC" eventType="touchUpInside" id="su0-wl-XRf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4j-8O-TyV">
-                                <rect key="frame" x="431" y="558" width="69" height="30"/>
-                                <state key="normal" title="No,thanks"/>
-                                <connections>
-                                    <action selector="noBtnTapped:" destination="ZKD-5M-HcC" eventType="touchUpInside" id="dBj-wT-NNF"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="OIY-SN-xgW" firstAttribute="top" secondItem="nMx-1Y-0fn" secondAttribute="bottom" constant="50" id="0xC-Ir-ayz"/>
-                            <constraint firstItem="nMx-1Y-0fn" firstAttribute="centerX" secondItem="1OQ-zZ-ieL" secondAttribute="centerX" id="2Dl-iF-rda"/>
-                            <constraint firstItem="nMx-1Y-0fn" firstAttribute="leading" secondItem="FHc-KW-i7y" secondAttribute="leadingMargin" id="5bb-DX-xlc"/>
-                            <constraint firstItem="S4j-8O-TyV" firstAttribute="baseline" secondItem="1sg-fd-bVy" secondAttribute="baseline" id="KQ4-t3-0fO"/>
-                            <constraint firstAttribute="trailing" secondItem="S4j-8O-TyV" secondAttribute="trailing" constant="100" id="TJW-ep-pbw"/>
-                            <constraint firstItem="1OQ-zZ-ieL" firstAttribute="top" secondItem="hFC-WC-uvH" secondAttribute="bottom" id="XVI-FP-uNg"/>
-                            <constraint firstItem="nMx-1Y-0fn" firstAttribute="top" secondItem="1OQ-zZ-ieL" secondAttribute="bottom" constant="8" symbolic="YES" id="fV3-cW-3Ws"/>
-                            <constraint firstItem="1OQ-zZ-ieL" firstAttribute="centerX" secondItem="FHc-KW-i7y" secondAttribute="centerX" id="g27-7A-Fru"/>
-                            <constraint firstItem="1sg-fd-bVy" firstAttribute="top" secondItem="nMx-1Y-0fn" secondAttribute="bottom" constant="8" symbolic="YES" id="jpa-DC-Yox"/>
-                            <constraint firstItem="1sg-fd-bVy" firstAttribute="leading" secondItem="FHc-KW-i7y" secondAttribute="leading" constant="100" id="q8g-iO-NBQ"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="agreeBtn" destination="1sg-fd-bVy" id="bAY-bj-QUL"/>
-                        <outlet property="noBtn" destination="S4j-8O-TyV" id="JzV-hO-4rd"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yPS-uG-pat" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4078" y="-700"/>
         </scene>
         <!--Review View Controller-->
         <scene sceneID="wjF-mX-jkJ">
@@ -535,14 +373,6 @@ Content may not be submitted to FoodTalk NZ, who will moderate all content and u
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5aZ-ec-1mO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3391" y="784"/>
-        </scene>
-        <!--Guider Page View Controller-->
-        <scene sceneID="5cS-yl-P05">
-            <objects>
-                <pageViewController storyboardIdentifier="GuideController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="xNz-hn-MhS" customClass="GuiderPageViewController" customModule="FoodTalk" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q21-li-oQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2700" y="-700"/>
         </scene>
         <!--New Restaurant-->
         <scene sceneID="TOc-TS-qyI">
@@ -779,12 +609,13 @@ Content may not be submitted to FoodTalk NZ, who will moderate all content and u
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Sbg-Wj-JlZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="GR8-CP-GY3">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Vst-sT-PeT" kind="relationship" relationship="viewControllers" id="DZZ-XS-l1e"/>
                         <segue destination="jLy-HG-Xt0" kind="relationship" relationship="viewControllers" id="FRK-WP-qlY"/>
+                        <segue destination="Vst-sT-PeT" kind="relationship" relationship="viewControllers" id="DZZ-XS-l1e"/>
                         <segue destination="eqe-I9-wQv" kind="relationship" relationship="viewControllers" id="s0C-7Z-4gD"/>
                     </connections>
                 </tabBarController>
@@ -796,7 +627,7 @@ Content may not be submitted to FoodTalk NZ, who will moderate all content and u
         <scene sceneID="H7g-sd-daD">
             <objects>
                 <viewControllerPlaceholder storyboardName="Discover" id="jLy-HG-Xt0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="MFX-Eq-kTY"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="discover" id="MFX-Eq-kTY"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebW-px-7Ea" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -806,7 +637,7 @@ Content may not be submitted to FoodTalk NZ, who will moderate all content and u
         <scene sceneID="j3A-0i-Fa9">
             <objects>
                 <viewControllerPlaceholder storyboardName="About" id="eqe-I9-wQv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6a4-Hu-fqO"/>
+                    <tabBarItem key="tabBarItem" title="About" image="about" id="6a4-Hu-fqO"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s6w-NQ-q0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -814,8 +645,10 @@ Content may not be submitted to FoodTalk NZ, who will moderate all content and u
         </scene>
     </scenes>
     <resources>
+        <image name="about" width="25" height="25"/>
         <image name="barrafina" width="640" height="640"/>
         <image name="close" width="84" height="84"/>
+        <image name="discover" width="25" height="25"/>
         <image name="dislike" width="84" height="84"/>
         <image name="favorite" width="25" height="25"/>
         <image name="good" width="256" height="256"/>

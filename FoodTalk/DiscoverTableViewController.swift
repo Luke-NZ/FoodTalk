@@ -102,6 +102,29 @@ class DiscoverTableViewController: UITableViewController, UISearchResultsUpdatin
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+    override func viewDidAppear(animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        if !defaults.boolForKey("GuiderShowed") {
+            
+            if let guideVC = storyboard?.instantiateViewControllerWithIdentifier("GuideController") as? GuiderPageViewController {
+                
+                presentViewController(guideVC,animated:true,completion:nil)
+            }
+        }
+        
+        if !defaults.boolForKey("EULAShowed") {
+            if let guideVC1 = storyboard?.instantiateViewControllerWithIdentifier("GuiderEULAController") as? GuiderEULAViewController {
+                
+                presentViewController(guideVC1,animated:true,completion:nil)
+            }
+            return
+        }
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

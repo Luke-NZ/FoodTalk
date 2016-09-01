@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QMX-Vz-Mvd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QMX-Vz-Mvd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -29,19 +30,19 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMr-ik-cKn">
                                             <rect key="frame" x="86" y="9" width="205" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dI7-Ok-5xY">
                                             <rect key="frame" x="86" y="35" width="205" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyt-8h-480">
                                             <rect key="frame" x="86" y="54" width="205" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -131,13 +132,13 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="261" verticalHuggingPriority="251" text="Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vs-WT-345">
                                                     <rect key="frame" x="0.0" y="0.0" width="195" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sep-BE-U0A">
                                                     <rect key="frame" x="195" y="0.0" width="389" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -222,6 +223,175 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXd-To-uo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1150" y="1520"/>
+        </scene>
+        <!--Guider Content View Controller-->
+        <scene sceneID="iJN-uz-E7h">
+            <objects>
+                <viewController storyboardIdentifier="GuiderContentController" id="KPc-dB-3UQ" customClass="GuiderContentViewController" customModule="FoodTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xff-ok-Q0t"/>
+                        <viewControllerLayoutGuide type="bottom" id="oCE-3P-7SD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O7f-Si-84g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customization" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHr-Fb-GTA">
+                                <rect key="frame" x="220" y="20" width="160" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rnn-uc-Bz3">
+                                <rect key="frame" x="30" y="74" width="540" height="418"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Rnn-uc-Bz3" secondAttribute="height" multiplier="270:209" id="Ekw-Ik-xHA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your favorite restaurant anytime anywhere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5i-V8-2z5">
+                                <rect key="frame" x="122" y="539" width="357" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="zQz-DJ-P74">
+                                <rect key="frame" x="281" y="565" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bi7-YO-L4K">
+                                <rect key="frame" x="534" y="562" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="doneBtnTapped:" destination="KPc-dB-3UQ" eventType="touchUpInside" id="FFx-RV-eRN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rnn-uc-Bz3" firstAttribute="centerX" secondItem="bHr-Fb-GTA" secondAttribute="centerX" id="1po-eC-sjy"/>
+                            <constraint firstItem="oCE-3P-7SD" firstAttribute="top" secondItem="e5i-V8-2z5" secondAttribute="bottom" constant="40" id="3FH-4H-gD9"/>
+                            <constraint firstItem="bHr-Fb-GTA" firstAttribute="centerX" secondItem="O7f-Si-84g" secondAttribute="centerX" id="603-xS-1WZ"/>
+                            <constraint firstItem="Bi7-YO-L4K" firstAttribute="trailing" secondItem="O7f-Si-84g" secondAttribute="trailingMargin" id="Fab-JX-Eh2"/>
+                            <constraint firstItem="Bi7-YO-L4K" firstAttribute="top" secondItem="e5i-V8-2z5" secondAttribute="top" constant="23" id="Jqb-k3-11Z"/>
+                            <constraint firstItem="zQz-DJ-P74" firstAttribute="centerX" secondItem="O7f-Si-84g" secondAttribute="centerX" id="MMC-Jd-lAA"/>
+                            <constraint firstItem="Rnn-uc-Bz3" firstAttribute="leading" secondItem="O7f-Si-84g" secondAttribute="leadingMargin" constant="10" id="Tio-uY-uk4"/>
+                            <constraint firstItem="zQz-DJ-P74" firstAttribute="bottom" secondItem="oCE-3P-7SD" secondAttribute="top" constant="2" id="Un0-6W-PGN"/>
+                            <constraint firstItem="e5i-V8-2z5" firstAttribute="centerX" secondItem="O7f-Si-84g" secondAttribute="centerX" id="WK3-hj-Jsf"/>
+                            <constraint firstItem="bHr-Fb-GTA" firstAttribute="top" secondItem="xff-ok-Q0t" secondAttribute="bottom" id="aBX-9Q-HBZ"/>
+                            <constraint firstItem="Rnn-uc-Bz3" firstAttribute="top" secondItem="bHr-Fb-GTA" secondAttribute="bottom" constant="24" id="wxm-cB-R1Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="doneBtn" destination="Bi7-YO-L4K" id="qDC-sO-If8"/>
+                        <outlet property="imageView" destination="Rnn-uc-Bz3" id="8IJ-JE-btC"/>
+                        <outlet property="labelFooter" destination="e5i-V8-2z5" id="UXo-q4-8QL"/>
+                        <outlet property="labelHeading" destination="bHr-Fb-GTA" id="OI4-7P-tpU"/>
+                        <outlet property="pageCtrl" destination="zQz-DJ-P74" id="5u6-YY-3Sz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6d-t3-vP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2631" y="756"/>
+        </scene>
+        <!--GuiderEULA View Controller-->
+        <scene sceneID="rlt-4J-nyC">
+            <objects>
+                <viewController storyboardIdentifier="GuiderEULAController" id="aZa-f1-4RN" customClass="GuiderEULAViewController" customModule="FoodTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qAI-q3-R6S"/>
+                        <viewControllerLayoutGuide type="bottom" id="dyh-85-dvY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xad-V6-FRX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End User License Agreement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcQ-W8-TTc">
+                                <rect key="frame" x="189" y="20" width="222" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPt-Bz-Psx">
+                                <rect key="frame" x="20" y="49" width="560" height="501"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JyX-HQ-P5v">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="317.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOq-lS-bdv">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="317.5"/>
+                                                <string key="text">This End User License Agreement (“Agreement”) is between you and FoodTalk NZ and governs use of this app made available through the Apple App Store. By installing the FoodTalk NZ App, you agree to be bound by this Agreement and understand that there is no tolerance for objectionable content. If you do not agree with the terms and conditions of this Agreement, you are not entitled to use the FoodTalk NZ App.
+In order to ensure FoodTalk NZ provides the best experience possible for everyone, we strongly enforce a no tolerance policy for objectionable content. If you see inappropriate content, please use the “Report as offensive” feature found under each post.
+Content may not be submitted to FoodTalk NZ, who will moderate all content and ultimately decide whether or not to post a submission to the extent such content includes, is in conjunction with, or alongside any, Objectionable Content. Objectionable Content includes, but is not limited to: (i) sexually explicit materials; (ii) obscene, defamatory, libelous, slanderous, violent and/or unlawful content or profanity; (iii) content that infringes upon the rights of any third party, including copyright, trademark, privacy, publicity or other personal or proprietary right, or that is deceptive or fraudulent; (iv) content that promotes the use or sale of illegal or regulated substances, tobacco products, ammunition and/or firearms; and (v) gambling, including without limitation, any online casino, sports books, bingo or poker.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <string key="userLabel">End User License Agreement (“Agreement”) is between you and FoodTalk NZ and governs use of this app made available through the Apple App Store. By installing the FoodTalk NZ App, you agree to be bound by this Agreement and understand that there is no tolerance for objectionable content. If you do not agree with the terms and conditions of this Agreement, you are not entitled to use the FoodTalk NZ App. In order to ensure FoodTalk NZ provides the best experience possible for everyone, we strongly enforce a no tolerance policy for objectionable content. If you see inappropriate content, please use the “Report as offensive” feature found under each post. Content may not be submitted to FoodTalk NZ, who will moderate all content and ultimately decide whether or not to post a submission to the extent such content includes, is in conjunction with, or alongside any, Objectionable Content. Objectionable Content includes, but is not limited to: (i) sexually explicit materials; (ii) obscene, defamatory, libelous, slanderous, violent and/or unlawful content or profanity; (iii) content that infringes upon the rights of any third party, including copyright, trademark, privacy, publicity or other personal or proprietary right, or that is deceptive or fraudulent; (iv) content that promotes the use or sale of illegal or regulated substances, tobacco products, ammunition and/or firearms; and (v) gambling, including without limitation, any online casino, sports books, bingo or poker.</string>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="nOq-lS-bdv" firstAttribute="leading" secondItem="JyX-HQ-P5v" secondAttribute="leading" id="CfJ-ZP-NB7"/>
+                                            <constraint firstItem="nOq-lS-bdv" firstAttribute="top" secondItem="JyX-HQ-P5v" secondAttribute="top" id="EAW-tZ-5HE"/>
+                                            <constraint firstAttribute="bottom" secondItem="nOq-lS-bdv" secondAttribute="bottom" id="VWH-r8-Twm"/>
+                                            <constraint firstAttribute="trailing" secondItem="nOq-lS-bdv" secondAttribute="trailing" id="eWJ-mN-yQV"/>
+                                            <constraint firstItem="nOq-lS-bdv" firstAttribute="width" secondItem="JyX-HQ-P5v" secondAttribute="width" id="vka-gi-VXk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JyX-HQ-P5v" secondAttribute="trailing" id="BK4-YM-wub"/>
+                                    <constraint firstAttribute="bottom" secondItem="JyX-HQ-P5v" secondAttribute="bottom" id="Syv-DD-gdv"/>
+                                    <constraint firstItem="JyX-HQ-P5v" firstAttribute="width" secondItem="cPt-Bz-Psx" secondAttribute="width" id="qOx-Oo-Hqb"/>
+                                    <constraint firstItem="JyX-HQ-P5v" firstAttribute="leading" secondItem="cPt-Bz-Psx" secondAttribute="leading" id="tee-w5-odQ"/>
+                                    <constraint firstItem="JyX-HQ-P5v" firstAttribute="top" secondItem="cPt-Bz-Psx" secondAttribute="top" id="uQu-Bb-cA2"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDF-C5-neg">
+                                <rect key="frame" x="100" y="558" width="41" height="30"/>
+                                <state key="normal" title="Agree"/>
+                                <connections>
+                                    <action selector="agreeBtnTapped:" destination="aZa-f1-4RN" eventType="touchUpInside" id="qOg-tg-IwM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZG-Eh-kWJ">
+                                <rect key="frame" x="431" y="558" width="69" height="30"/>
+                                <state key="normal" title="No,thanks"/>
+                                <connections>
+                                    <action selector="noBtnTapped:" destination="aZa-f1-4RN" eventType="touchUpInside" id="cxO-2f-SHi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TcQ-W8-TTc" firstAttribute="centerX" secondItem="Xad-V6-FRX" secondAttribute="centerX" id="1hC-cN-2pK"/>
+                            <constraint firstItem="SDF-C5-neg" firstAttribute="leading" secondItem="Xad-V6-FRX" secondAttribute="leading" constant="100" id="BWa-Cg-xHJ"/>
+                            <constraint firstItem="cPt-Bz-Psx" firstAttribute="top" secondItem="TcQ-W8-TTc" secondAttribute="bottom" constant="8" symbolic="YES" id="OmV-ZZ-hpW"/>
+                            <constraint firstItem="cPt-Bz-Psx" firstAttribute="leading" secondItem="Xad-V6-FRX" secondAttribute="leadingMargin" id="Rhl-qN-yvS"/>
+                            <constraint firstItem="cPt-Bz-Psx" firstAttribute="centerX" secondItem="TcQ-W8-TTc" secondAttribute="centerX" id="Uzv-lf-nVm"/>
+                            <constraint firstItem="dyh-85-dvY" firstAttribute="top" secondItem="cPt-Bz-Psx" secondAttribute="bottom" constant="50" id="V3K-bh-Eqg"/>
+                            <constraint firstItem="TcQ-W8-TTc" firstAttribute="top" secondItem="qAI-q3-R6S" secondAttribute="bottom" id="hgI-5W-meh"/>
+                            <constraint firstItem="SDF-C5-neg" firstAttribute="top" secondItem="cPt-Bz-Psx" secondAttribute="bottom" constant="8" symbolic="YES" id="tww-SS-cZz"/>
+                            <constraint firstAttribute="trailing" secondItem="7ZG-Eh-kWJ" secondAttribute="trailing" constant="100" id="wxa-D4-LsD"/>
+                            <constraint firstItem="7ZG-Eh-kWJ" firstAttribute="baseline" secondItem="SDF-C5-neg" secondAttribute="baseline" id="yJk-DN-EbU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="agreeBtn" destination="SDF-C5-neg" id="Bfw-ZE-VYd"/>
+                        <outlet property="noBtn" destination="7ZG-Eh-kWJ" id="wyp-3G-sXa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oql-aq-QV9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3318" y="756"/>
+        </scene>
+        <!--Guider Page View Controller-->
+        <scene sceneID="dl7-yH-aox">
+            <objects>
+                <pageViewController storyboardIdentifier="GuideController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="nUo-IO-Why" customClass="GuiderPageViewController" customModule="FoodTalk" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYN-5Z-NSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1940" y="756"/>
         </scene>
     </scenes>
     <resources>
